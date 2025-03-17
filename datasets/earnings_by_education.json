@@ -1,0 +1,187 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "creationTag": {
+    "extendedProperties": {},
+    "lastModifiedBy": {
+      "login": "sean"
+    },
+    "lastModifiedOn": 1687964988406,
+    "versionNumber": 0
+  },
+  "customFields": {
+    "gdpr_contains_personal_data": "UNSURE"
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "dkuProperties": [],
+  "featureGroup": false,
+  "flowOptions": {
+    "crossProjectBuildBehavior": "DEFAULT",
+    "rebuildBehavior": "NORMAL",
+    "virtualizable": false
+  },
+  "formatParams": {
+    "arrayMapFormat": "json",
+    "charset": "utf-8",
+    "compress": "",
+    "dateSerializationFormat": "ISO",
+    "escapeChar": "\\",
+    "fileReadFailureBehavior": "FAIL",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "parseHeaderRow": true,
+    "probableNumberOfRecords": 2,
+    "quoteChar": "\"",
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "separator": ",",
+    "skipRowsAfterHeader": 0,
+    "skipRowsBeforeHeader": 0,
+    "style": "excel",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
+  },
+  "formatType": "csv",
+  "managed": false,
+  "metrics": {
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    },
+    "engineConfig": {
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "latestPartitionsN": 1,
+          "maxReadUncompressedBytes": -1,
+          "maxRecords": -1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "FULL",
+          "targetRatio": 0.02,
+          "useMemTable": false,
+          "withinFirstN": -1
+        }
+      },
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "impala": {
+        "active": true
+      },
+      "padRunsWithMetrics": false,
+      "python": {},
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "sql": {
+        "active": true
+      }
+    },
+    "probes": [
+      {
+        "computeOnBuildMode": "PARTITION",
+        "configuration": {},
+        "enabled": true,
+        "meta": {
+          "level": 0,
+          "name": "Basic data"
+        },
+        "type": "basic"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {},
+        "enabled": true,
+        "meta": {
+          "level": 0,
+          "name": "Record count"
+        },
+        "type": "records"
+      }
+    ]
+  },
+  "metricsChecks": {
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    },
+    "monitor": false
+  },
+  "params": {
+    "filesSelectionRules": {
+      "excludeRules": [],
+      "explicitFiles": [],
+      "includeRules": [],
+      "mode": "ALL"
+    },
+    "notReadyIfEmpty": false,
+    "uploadConnection": "Default (in DSS data dir.)"
+  },
+  "partitioning": {
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": [],
+    "ignoreNonMatchingFile": false
+  },
+  "readWriteOptions": {
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    },
+    "forceSingleOutputFile": false,
+    "preserveOrder": false,
+    "writeBuckets": 1
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "education_level",
+        "type": "string"
+      },
+      {
+        "name": "median_weekly_earnings_usd",
+        "type": "bigint"
+      }
+    ],
+    "userModified": true
+  },
+  "tags": [],
+  "type": "UploadedFiles",
+  "typeSystemVersion": "V1",
+  "versionTag": {
+    "extendedProperties": {},
+    "lastModifiedBy": {
+      "login": "sean"
+    },
+    "lastModifiedOn": 1688405667506,
+    "versionNumber": 2
+  }
+}

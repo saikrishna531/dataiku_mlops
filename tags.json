@@ -1,0 +1,28 @@
+{
+  "tags": {
+    "duplicated": {
+      "color": "#3A85AD"
+    },
+    "starter": {
+      "color": "#28aadd"
+    },
+    "downloads": {
+      "color": "#de1ea5"
+    },
+    "imported": {
+      "color": "#263238"
+    },
+    "tutorial": {
+      "color": "#FFD83D"
+    },
+    "complete": {
+      "color": "#a088bd"
+    },
+    "academy": {
+      "color": "#d66b9b"
+    },
+    "gallery": {
+      "color": "#FFD83D"
+    }
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "creationTag": {
+    "extendedProperties": {},
+    "lastModifiedBy": {
+      "login": "sean"
+    },
+    "lastModifiedOn": 1687364608352,
+    "versionNumber": 0
+  },
+  "customFields": {
+    "gdpr_contains_personal_data": "UNSURE"
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "description": "labeled dataset of real and fake job postings from [Kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)",
+  "dkuProperties": [],
+  "featureGroup": false,
+  "flowOptions": {
+    "crossProjectBuildBehavior": "DEFAULT",
+    "rebuildBehavior": "NORMAL",
+    "virtualizable": false
+  },
+  "formatParams": {
+    "arrayMapFormat": "json",
+    "charset": "utf-8",
+    "compress": "",
+    "dateSerializationFormat": "ISO",
+    "escapeChar": "\\",
+    "fileReadFailureBehavior": "FAIL",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "parseHeaderRow": true,
+    "probableNumberOfRecords": 18,
+    "quoteChar": "\"",
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "separator": ",",
+    "skipRowsAfterHeader": 0,
+    "skipRowsBeforeHeader": 0,
+    "style": "excel",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
+  },
+  "formatType": "csv",
+  "managed": false,
+  "metrics": {
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ],
+      "partition": "NP"
+    },
+    "engineConfig": {
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "latestPartitionsN": 1,
+          "maxReadUncompressedBytes": -1,
+          "maxRecords": -1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "FULL",
+          "targetRatio": 0.02,
+          "useMemTable": false,
+          "withinFirstN": -1
+        }
+      },
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "impala": {
+        "active": true
+      },
+      "padRunsWithMetrics": false,
+      "python": {},
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "sql": {
+        "active": true
+      }
+    },
+    "probes": [
+      {
+        "computeOnBuildMode": "PARTITION",
+        "configuration": {},
+        "enabled": true,
+        "meta": {
+          "level": 0,
+          "name": "Basic data"
+        },
+        "type": "basic"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {},
+        "enabled": true,
+        "meta": {
+          "level": 0,
+          "name": "Record count"
+        },
+        "type": "records"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {
+          "aggregates": []
+        },
+        "enabled": false,
+        "meta": {
+          "level": 2,
+          "name": "Columns statistics"
+        },
+        "type": "col_stats"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        },
+        "enabled": false,
+        "meta": {
+          "level": 3,
+          "name": "Most frequent values"
+        },
+        "type": "adv_col_stats"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {
+          "aggregates": []
+        },
+        "enabled": false,
+        "meta": {
+          "level": 4,
+          "name": "Columns percentiles"
+        },
+        "type": "percentile_stats"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {
+          "aggregates": []
+        },
+        "enabled": false,
+        "meta": {
+          "level": 4,
+          "name": "Data validity"
+        },
+        "type": "verify_col"
+      }
+    ]
+  },
+  "metricsChecks": {
+    "checks": [
+      {
+        "autoRun": false,
+        "computeOnBuildMode": "PARTITION",
+        "maximum": 25000.0,
+        "maximumEnabled": true,
+        "meta": {
+          "label": "Expected record count",
+          "name": "Value in range"
+        },
+        "metricId": "records:COUNT_RECORDS",
+        "minimum": 100.0,
+        "minimumEnabled": true,
+        "softMaximum": 20000.0,
+        "softMaximumEnabled": true,
+        "softMinimum": 300.0,
+        "softMinimumEnabled": true,
+        "type": "numericRange"
+      }
+    ],
+    "displayedState": {
+      "checks": [
+        "Expected record count"
+      ],
+      "partition": "NP"
+    },
+    "monitor": true
+  },
+  "params": {
+    "filesSelectionRules": {
+      "excludeRules": [],
+      "explicitFiles": [],
+      "includeRules": [],
+      "mode": "ALL"
+    },
+    "notReadyIfEmpty": false,
+    "uploadConnection": "Default (in DSS data dir.)"
+  },
+  "partitioning": {
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": [],
+    "ignoreNonMatchingFile": false
+  },
+  "readWriteOptions": {
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    },
+    "forceSingleOutputFile": false,
+    "preserveOrder": false,
+    "writeBuckets": 1
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "job_id",
+        "type": "bigint"
+      },
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "department",
+        "type": "string"
+      },
+      {
+        "name": "salary_range",
+        "type": "string"
+      },
+      {
+        "name": "company_profile",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "requirements",
+        "type": "string"
+      },
+      {
+        "name": "benefits",
+        "type": "string"
+      },
+      {
+        "name": "telecommuting",
+        "type": "bigint"
+      },
+      {
+        "name": "has_company_logo",
+        "type": "bigint"
+      },
+      {
+        "name": "has_questions",
+        "type": "bigint"
+      },
+      {
+        "name": "employment_type",
+        "type": "string"
+      },
+      {
+        "name": "required_experience",
+        "type": "string"
+      },
+      {
+        "name": "required_education",
+        "type": "string"
+      },
+      {
+        "name": "industry",
+        "type": "string"
+      },
+      {
+        "name": "function",
+        "type": "string"
+      },
+      {
+        "comment": "0 - real; 1 - fake job",
+        "name": "fraudulent",
+        "type": "bigint"
+      }
+    ],
+    "userModified": true
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "UploadedFiles",
+  "typeSystemVersion": "V1",
+  "versionTag": {
+    "extendedProperties": {},
+    "lastModifiedBy": {
+      "login": "sean"
+    },
+    "lastModifiedOn": 1690316830770,
+    "versionNumber": 12
+  }
+}
