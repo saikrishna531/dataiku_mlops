@@ -203,7 +203,6 @@
     "dkuProperties": []
   },
   "name": "MLOps Quick Start for naturiyathishreddy",
-  "projectStatus": "Sandbox",
   "imgPattern": 4,
   "showInitials": false,
   "metrics": {
@@ -274,7 +273,8 @@
   "tags": [
     "academy",
     "tutorial",
-    "downloads"
+    "downloads",
+    "duplicated"
   ],
   "customFields": {
     "gdpr_forbid_dataset_sharing": false,
