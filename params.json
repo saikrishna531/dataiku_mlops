@@ -76,7 +76,20 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "saikrishna531/dataiku_mlops",
+              "accessToken": "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",
+              "repository": "git@github.com:saikrishna531/dataiku_mlops.git"
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
