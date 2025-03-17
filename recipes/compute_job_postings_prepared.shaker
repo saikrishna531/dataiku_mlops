@@ -1,14 +1,104 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "job_id"
+      },
+      {
+        "d": true,
+        "name": "title"
+      },
+      {
+        "d": true,
+        "name": "location"
+      },
+      {
+        "d": true,
+        "name": "country"
+      },
+      {
+        "d": true,
+        "name": "state"
+      },
+      {
+        "d": true,
+        "name": "city"
+      },
+      {
+        "d": true,
+        "name": "department"
+      },
+      {
+        "d": true,
+        "name": "salary_range"
+      },
+      {
+        "d": true,
+        "name": "company_profile"
+      },
+      {
+        "d": true,
+        "name": "len_company_profile"
+      },
+      {
+        "d": true,
+        "name": "description"
+      },
+      {
+        "d": true,
+        "name": "len_description"
+      },
+      {
+        "d": true,
+        "name": "requirements"
+      },
+      {
+        "d": true,
+        "name": "benefits"
+      },
+      {
+        "d": true,
+        "name": "telecommuting"
+      },
+      {
+        "d": true,
+        "name": "has_company_logo"
+      },
+      {
+        "d": true,
+        "name": "has_questions"
+      },
+      {
+        "d": true,
+        "name": "employment_type"
+      },
+      {
+        "d": true,
+        "name": "required_experience"
+      },
+      {
+        "d": true,
+        "name": "required_education"
+      },
+      {
+        "d": true,
+        "name": "industry"
+      },
+      {
+        "d": true,
+        "name": "function"
+      },
+      {
+        "d": true,
+        "name": "fraudulent"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
-      "filter": {
-        "distinct": false,
-        "enabled": false
-      },
       "latestPartitionsN": 1,
       "maxRecords": 10000,
       "maxRecordsForDisplay": -1,
@@ -17,16 +107,22 @@
         "enabled": false
       },
       "withinFirstN": -1,
-      "partitionSelectionMethod": "ALL",
       "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "timeout": -1
+      "samplingMethod": "HEAD_SEQUENTIAL"
     },
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -181,7 +277,8 @@
       "partitionSelectionMethod": "ALL",
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "FULL"
+      "samplingMethod": "FULL",
+      "ascending": true
     },
     "autoRefreshSample": false
   },
@@ -225,6 +322,7 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
-    "valueColoringMode": "HASH"
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
   }
 }
