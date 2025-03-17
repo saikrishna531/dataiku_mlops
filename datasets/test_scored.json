@@ -109,7 +109,6 @@
       {"name":"industry","type":"string"},
       {"name":"function","type":"string"},
       {"name":"fraudulent","type":"bigint"},
-      {"name":"min_salary","type":"bigint"},
       {"name":"education_level","type":"string"},
       {"name":"median_weekly_earnings_usd","type":"bigint"},
       {"name":"proba_0","type":"double"},
